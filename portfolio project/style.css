@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #080808;
+  color: #fff;
+}
+/*  -----------------------------------------NAV BAR --------------------------------------*/
+#header {
+  /* not understood */
+  width: 100%;
+  /*
+  /*height :100vh; i have removed this as i have hot uploded the image 
+  height: auto;
+  padding: 50px 0; /* Add some padding to make it look nice 
+  /*background-image: url(image/harsh.jpg);
+  */
+  background-size: cover;
+  background-position: center;
+}
+.container {
+  padding: 10px 10%;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* not understood */
+  /*background-color: white;*/
+}
+
+.logo {
+  width: 140px;
+}
+nav h1 span {
+  color: #ff004f;
+  font-size: 35px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+  position: relative; /* not understood */
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a::after {
+  /* not understood */
+  content: "";
+  width: 0; /* initially make width 0% as we hver then make it 100%  , 100 % because it will then take entire text */
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0; /* it start apperaing from the left corner of the link starting text */
+  bottom: -6px; /* so that it will apperar in the bottom not on the top */
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.header-text {
+  margin-top: 20px;
+  font-size: 30px;
+}
+.header-text h1 {
+  font-size: 60px;
+  margin-top: 25px;
+}
+.header-text h1 span {
+  color: lightblue;
+}
+
+/* --------------------------------------------------------ABOUT ----------------------------------------------*/
+#about {
+  padding: 80px 0;
+  color: #ababab;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: w;
+}
+
+.about-col-1 {
+  flex-basis: 35%; /* it will give how much space it will take in flex */
+}
+.about-col-1 img {
+  width: 100%;
+  border-radius: 15px;
+}
+.about-col-2 {
+  flex-basis: 60%; /* remaining 5 % will be the spave in between */
+}
+
+.sub-title {
+  font-size: 60px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.about-col-2 p {
+  margin-bottom: 30px;
+}
+
+.tab-titles {
+  display: flex;
+  margin-right: 20px 0 40px;
+}
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-links::after {
+  content: "";
+  width: 0; /* initially make width 0% as we hver then make it 100%  , 100 % because it will then take entire text */
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0; /* it start apperaing from the left corner of the link starting text */
+  bottom: -8px; /* so that it will apperar in the bottom not on the top */
+  transition: 0.5s;
+}
+.tab-links.active-link::after {
+  /* it will display only for the skill section not for the other sections */
+  width: 100%;
+}
+
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.tab-contents ul li span {
+  color: #8fe8c6;
+  font-size: 14px;
+}
+
+.tab-contents {
+  /* it is not displaying the any one */
+  display: none;
+}
+
+.tab-contents.active-tab {
+  /* it helps to hide the one you had not click and display only the particular one */
+  display: block;
+}
+
+/* --------------------------------------------------------------services ------------------------------------------------*/
+#services {
+  padding: 30px 0;
+}
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.services-list div {
+  background: #262626;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+.services-list i {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.services-list div h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  color: #8fe8c6;
+}
+.services-list div a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.services-list div:hover {
+  background: #ff004f;
+  transform: translateY(-10px); /* it will move up by 10px */
+}
+
+.services-list div:hover h2 {
+  color: #080808;
+}
+
+/* -----------------------------------------------------portfolio -----------------------------------------*/
+#Portfolio {
+  padding: 50px 0;
+}
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.work {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.work img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transform: transform 0.5s;
+}
+.layer {
+  width: 100%;
+  height: 0%; /* by defoult we make height to 0  we will make 100 % when we hover ocer it */
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.8s;
+}
+
+.layer h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.layer a {
+  margin-top: 20px;
+  color: #ff004f;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  align-items: center;
+}
+
+.work:hover img {
+  transform: scale(1.1); /* when you hover it will zoom */
+}
+
+.work:hover .layer {
+  /* it will change the layer height to 100% in place of 0% */
+  height: 100%;
+}
+
+.btn {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #ff004f;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  transition: background 0.5s;
+}
+.btn:hover {
+  background: #ff004f;
+}
+
+/*-----------------------------------------------------contact information -----------------------------------------------*/
+.contact-left {
+  flex-basis: 35%;
+}
+.contact-right {
+  flex-basis: 60%;
+}
+.contact-left p {
+  margin-top: 30px;
+}
+.contact-left p i {
+  color: #ff004f;
+  margin-right: 15px;
+  font-size: 25px;
+}
+.social-icon {
+  margin-top: 30px;
+}
+.social-icon a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.social-icon a:hover {
+  color: #ff004f;
+  transform: translateY(-5px);
+}
+.btn.btn2 {
+  display: inline-block;
+  background: #ff004f;
+}
+.contact-right form {
+  width: 100%;
+}
+form input,
+form textarea {
+  border: 0;
+  width: 100%;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  font-size: 18px;
+  border-radius: 6px;
+  color: #fff;
+}
+
+form .btn2 {
+  padding: 15px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------------------------------responsive form all device -------------------*/
+@media only screen and (max-width: 600px) {
+  .header-text {
+    margin-top: 100%;
+    font-size: 16px;
+  }
+}
+
+/*--------------------------------------------------------message------------------------------------------*/
+#msg {
+  color: #61b752;
+  margin-top: -40px;
+  display: block;
+}

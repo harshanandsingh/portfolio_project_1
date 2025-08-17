@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Portfolio project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!--<img src="image/logo1.jpeg" class="logo">-->
+                <h1><span>H</span>ARSH.</h1>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <!--<p>my description</p>-->
+                <h1>Hi, I'm <span>Harsh Anand</span></h1>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------------about me ------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/harsh.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Innovative and results-driven problem solver with strong leadership qualities and a dedicated work ethic. 
+                        Proficient in multiple programming languages including C, C++, Python, Java, and JavaScript. 
+                        Experienced in solving over 400 problems on platforms like CodeChef. 
+                        Passionate about learning new technologies and understanding their underlying mechanisms.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"  onclick="opentab('experience')">Awards and Achievements</p>
+                        <p class="tab-links"  onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>C,C++, Java, Python, JavaScript, SQL (MySQL)</li>
+                            <li><span>Web Technologies</span><br>HTML, CSS, ReactJS, Servlets, JDBC</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>First Prize in Code-a-Thon</span><br>JSS Academy of Technical Education, Bangalore</li>
+                            <li><span>Feb 2024</span><br>Secured the first prize in a highly competitive coding contest focused on Data Structures and Algorithms.</li>
+                            <li><span></span><br>The contest, hosted on the CodeChef platform, involved solving 9 questions, where I successfully completed 6 and made significant progress on 2 more. I was awarded 1700 and a prestigious certificate for my achievement.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>JSS Academy of Technical Education, Bangalore</span><br>BE in Computer Science & Engineering</li>
+                            <li><span>DAV Public School, Begusarai</span><br>Class 12</li>
+                            <li><span>St. Paul Public School, Begusarai</span><br>Class 10</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------------------------------------------services -------------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Development</h2>
+                    <p>I design and develop dynamic and responsive websites using HTML, CSS, JavaScript, and ReactJS. My projects include creating e-commerce platforms and cloning popular websites, focusing on functionality and user experience.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>Application Development</h2>
+                    <p>I develop robust applications in languages like Java, Python, and JavaScript. My projects range from movie search and weather applications to comprehensive banking systems, demonstrating my ability to build functional and efficient solutions.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>UI/UX Design</h2>
+                    <p>I create intuitive and engaging user interfaces for web and mobile applications. My designs prioritize user satisfaction by improving usability and accessibility, ensuring a seamless experience for all users.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!--------------------------------------------------------------------------portfolio-------------------------------------->
+
+    <div id="Portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="Movie Search Application">
+                    <div class="layer">
+                        <h3>Movie Search Application</h3>
+                        <p>Developed using React and OMDB API, this application allows users to search for movies and view detailed information. It showcases API integration, state management, and user input validation.</p>
+                        <a href="#">🔗</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="Weather App">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>Created using React and OpenWeatherMap API, this app provides current weather information based on user input, demonstrating API handling and asynchronous programming skills.</p>
+                        <a href="#">🔗</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="Amazon Clone">
+                    <div class="layer">
+                        <h3>Amazon Clone</h3>
+                        <p>An e-commerce platform built with JavaScript, allowing users to manage their shopping cart, calculate total prices, and view delivery estimates. It highlights DOM manipulation and event handling.</p>
+                        <a href="#">🔗</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>  
+    </div>
+    
+
+    <!----------------------------------------------contact----------------------------------------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>Harsh Anand</p>
+                    <p>Bangalore, Karnataka, India</p>
+                    <p>Email: hasingh11441@gmail.com</p>
+                    <p>Phone: +91 9122426309</p>
+                    <div class="social-icon">
+                        <a href="https://www.linkedin.com/in/harsh-anand-404506245/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/harshanand"><i class="fab fa-github"></i></a>
+                        <a href="https://twitter.com/harshanand"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/harshanand"><i class="fab fa-instagram"></i></a>
+                    </div>                    
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!--------------------------------------------------javascript------------------------------------->
+    <script src="about.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxzuVHv2hX1I4u8lBggXrE--IsZMdjtz2VJYVKR8bPEbSFSzX0cn4725-LfC6A6VoR_3A/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully";
+                setTimeout(function(){
+                    msg.innerHTML = "";
+                },2000)
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
